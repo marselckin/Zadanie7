@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Tab </title>
+    </head>
+    <body>
+        <div align="center">
+            <table>
+                <h1>
+                <!--Displaying the converted table-->
+                     {% for tab in tables %}
+                    <h2>{{titles[loop.index]}}</h2>
+                    {{ tab|safe }}
+                    {% endfor %}
+                </h1>
+            </table>
+        </div>
+    </body>
+</html>
